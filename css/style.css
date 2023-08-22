@@ -1,0 +1,136 @@
+html {
+  font-size: 62.5%;
+  font-family: 'Tomorrow', sans-serif;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #06beb6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #48b1bf,
+    #06beb6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+div.contenedor-general {
+  width: 1240px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  border: 2px dotted black;
+}
+
+h1.titulo {
+  display: block;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+div.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.tarjeta {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 12rem;
+  height: 14rem;
+  box-shadow: 4px 6px 17px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 1rem;
+  margin: 2rem 2rem;
+  padding: 0.5rem;
+  background-image: url(../img/cover.jpg);
+  -webkit-box-shadow: 4px 6px 17px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 6px 17px -4px rgba(0, 0, 0, 0.75);
+}
+
+img.tarjeta-img {
+  display: none;
+}
+
+/* Adicionales */
+
+.acertada {
+  display: block;
+}
+
+div.pantalla-bloqueada,
+.choose-difficulty {
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+.choose-difficulty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.difficulty {
+  padding: 4rem 7rem;
+  border-style: none;
+  font-family: inherit;
+
+  font-size: 4rem;
+  font-weight: 600;
+  border-radius: 9px;
+
+  cursor: pointer;
+}
+
+h2.mensaje {
+  z-index: 10;
+  margin: 32rem 0;
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.data-container {
+  display: flex;
+  justify-content: space-around;
+}
+.attempts {
+  font-size: 3rem;
+}
+.error {
+  font-size: 3rem;
+}
+
+div.nivel-dificultad {
+  position: absolute;
+  right: 21rem;
+  bottom: 5rem;
+  font-size: 3rem;
+}
